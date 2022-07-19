@@ -81,7 +81,7 @@ def choose_8styles():
 	Image.open("./StyleCariGAN/final_result/58.png")
 
 
-def run_StyleCariGAN(user, user_id, emotion):
+def run_StyleCariGAN(): #BE연결 성공하면, run_StyleCariGAN(user, user_id, emotion)
 	make_input_directory()
 	make_output_directory()
 	make_final_output_directory()
@@ -92,3 +92,7 @@ def run_StyleCariGAN(user, user_id, emotion):
 	test()
 	
 	choose_8styles()
+
+
+#실행
+run_StyleCariGAN()

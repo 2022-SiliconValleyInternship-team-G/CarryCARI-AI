@@ -65,7 +65,7 @@ def test():
 	os.chdir("./StyleCariGAN")
 
 	#python test.py --ckpt [CHECKPOINT_PATH]              --input_dir [INPUT_IMAGE_PATH] --output_dir [OUTPUT_CARICATURE_PATH] --invert_images
-	!python test.py --ckpt ./checkpoint/StyleCariGAN/001000.pt --input_dir user_image --output_dir user_result --invert_images
+	os.system("python test.py --ckpt ./checkpoint/StyleCariGAN/001000.pt --input_dir user_image --output_dir user_result --invert_images")
 
 
 def choose_8styles():

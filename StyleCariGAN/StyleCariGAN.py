@@ -40,7 +40,7 @@ def make_final_output_directory():
 
 
 def find_inputImg_1():
-        #os.chdir("./StyleCariGAN/user_image")
+        os.chdir("./StyleCariGAN/user_image")
 
         url = "https://img.hankyung.com/photo/202111/p1065590921493731_758_thum.jpg"
         os.system("wget " + url + " -P /root/yeonwoo/StyleCariGAN/user_image" +" -O photo.jpg")
@@ -49,7 +49,7 @@ def find_inputImg_1():
 
 def find_inputImg_2(user, user_id, emotion):
         if emotion == 0 : #func1
-					file_name = user.user_img.name.split('/')[1] #ex) cat.png
+	  file_name = user.user_img.name.split('/')[1] #ex) cat.png
           input_img = "/CarryCARI/assets/user_image/{user_id}/{file_name}"
         else : #func2
           input_img = "/CarryCARI/assets/user_image/user_{user_id}.jpg" #user_{user_id}.jpg

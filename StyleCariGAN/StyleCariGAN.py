@@ -36,7 +36,7 @@ def make_final_output_directory():
         dir = 'final_result'
         parent_dir = './StyleCariGAN'
         path = os.path.join(parent_dir, dir)
-        os.mkdir(path)StyleCariGAN()
+        os.mkdir(path)
 
 
 def find_inputImg_1():
